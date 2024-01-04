@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% load django_bootstrap5 %}
+{% bootstrap_javascript %}
+{% bootstrap_css %}
+
+
+<html lang="{{ LANGUAGE_CODE }}">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% translate 'GitHub Analytics' %}</title>
+</head>
+
+<body>
+    <header>
+        {% include 'includes/header.html' %}
+    </header>
+
+    <main>
+        {% block content %}
+
+        {% endblock %}
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

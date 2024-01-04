@@ -1,0 +1,54 @@
+{% load i18n %}
+
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}">GITHUB ANALYTICS</a>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        {% trans "Page1" %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        {% trans "Page2" %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        {% trans "Page3" %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        {% trans "Page4" %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        {% trans "Page5" %}
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav ml-auto btn-group">
+                <li>
+                    <a class="nav-link" href="#">
+                        {% trans "Log In" %}
+                    </a>
+                </li>
+            </ul>
+
+            <ul class="navbar-nav btn-group">
+                <li>
+                    <a class="nav-link" href="#">
+                        {% trans "Lang" %}
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
